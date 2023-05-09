@@ -1,0 +1,7 @@
+interface {{fast}} {{iface_name}}
+no shut
+ip address {{ip_addr}}
+
+router bgp {{AS}}
+neighbor {{neighbour_ip}} remote-as {{neighbour_as}}
+network {{network_ip}} mask {{subnet}}
